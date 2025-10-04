@@ -1,0 +1,45 @@
+package Chapter;
+import java.util.Scanner;
+public class Chapter {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		//Enter team names and weights
+		System.out.print("Enter Team Name: ");
+		String teamName = input.nextLine();
+		System.out.print("Enter Team Member 1: ");
+		String memberName1 = input.nextLine();
+		System.out.print("Enter Weight: ");
+		String weight1 = input.nextLine();
+		
+		//Enter team names and weights
+		System.out.print("Enter Team Member 2: ");
+		String memberName2 = input.nextLine();
+		System.out.print("Enter Weight: ");
+		String weight2 = input.nextLine();
+		
+		//Enter team names and weights
+		System.out.print("Enter Team Member 3: ");
+		String memberName3 = input.nextLine();
+		System.out.print("Enter Weight: ");
+		String weight3 = input.nextLine();
+		
+		
+		// Add weights together (convert Strings to doubles first)
+		double totalPounds = Double.parseDouble(weight1)
+		                   + Double.parseDouble(weight2)
+		                   + Double.parseDouble(weight3);
+		
+		// Convert total to kilograms
+		double totalKilograms = totalPounds / 2.2046;
+		
+		System.out.print("Team " + teamName + " members: " + memberName1 + ", " + memberName2 + ", " + memberName3 + ". ");
+		
+		if (totalKilograms > 260)
+			System.out.print("The total team weight is " + totalKilograms + " and you are over the maximum!");
+		else
+			System.out.print("Total team weight is " + totalKilograms + " and you are under the maximum!");
+	}
+}
