@@ -1,0 +1,8 @@
+Input team name (teamName)
+Input team member name (memberName) and weight of individual in pounds (weight)
+
+Compute the total weight of all members (totalLb) and convert to kilograms (totalKg)
+
+Calculate if less than the maximum weight allowed in kilograms, totalKg > 272.16kg
+
+Output teamName and total totalWeight is under/not under the maximum.
